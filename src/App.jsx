@@ -1,7 +1,18 @@
-import LikeButton from './components/LikeButton';
+// Pages
+import Home from './pages/Home';
+// Layouts
+import Header from './layouts/Header';
+// Styles
+import GlobalStyled from './styles/GlobalStyle';
 
 function App() {
-  return <LikeButton />;
+  return (
+    <>
+      <GlobalStyled />
+      <Header />
+      <Home />
+    </>
+  );
 }
 
 export default App;
