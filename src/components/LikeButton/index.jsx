@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Icons
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import { BsHeart, BsHeartFill } from 'react-icons/bs';
 
 // Style
 import Container from './LikeButton.style';
@@ -15,7 +15,7 @@ function LikeButton() {
         setLiked(!liked);
       }}
     >
-      {liked ? <AiFillHeart color="red" /> : <AiOutlineHeart />}
+      {liked ? <BsHeartFill color="red" /> : <BsHeart />}
     </Container>
   );
 }
