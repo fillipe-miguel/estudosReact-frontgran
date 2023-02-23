@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 // Style
-import LikeButtonStyled from './style';
+import Container from './LikeButton.style';
 
 function LikeButton() {
   const [liked, setLiked] = useState(false);
 
   return (
-    <LikeButtonStyled
+    <Container
       onClick={() => {
         setLiked(!liked);
       }}
     >
       {liked ? <AiFillHeart color="red" /> : <AiOutlineHeart />}
-    </LikeButtonStyled>
+    </Container>
   );
 }
 
