@@ -1,11 +1,12 @@
 import React from 'react';
-import HeaderStyled from './style';
+// Styles
+import Container from './Header.style';
 
 function Header() {
   return (
-    <HeaderStyled>
+    <Container>
       <h2>HEADER</h2>
-    </HeaderStyled>
+    </Container>
   );
 }
 
